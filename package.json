@@ -1,0 +1,28 @@
+{
+  "name": "@open-node/errors",
+  "version": "0.1.0",
+  "description": "custom error object",
+  "main": "src/errors.js",
+  "scripts": {
+    "lint": "eslint ./src/*",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch src",
+    "release": "npm publish --registry=https://registry.npmjs.org --access=public",
+    "release:github": "npm publish --registry=https://npm.pkg.github.com/"
+  },
+  "pre-commit": ["lint", "test"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-node/errors.git"
+  },
+  "keywords": ["debugger", "errors"],
+  "author": "Redstone Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-node/errors/issues"
+  },
+  "homepage": "https://github.com/open-node/errors#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
