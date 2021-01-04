@@ -14,9 +14,11 @@ describe("Errors", () => {
     expect(errors.key2().message).toBe("message2 %d, %s");
     expect(errors.key3().message).toBe("message3 %s");
 
-    expect(errors.key2("20", "good").message).toBe("message2 20, good");
+    expect(errors.key2("20", "good").message).toBe("message2 %d, %s");
+    expect(errors.key2("20", "good").data).toEqual(["20", "good"]);
 
     // world string be appened at the tail
-    expect(errors.key3("hello", "world").message).toBe("message3 hello world");
+    expect(errors.key3("hello", "world").message).toBe("message3 %s");
+    expect(errors.key3("hello", "world").data).toEqual(["hello", "world"]);
   });
 });

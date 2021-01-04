@@ -5,7 +5,7 @@ make the error object with custom defines
 [![codecov](https://codecov.io/gh/open-node/errors/branch/master/graph/badge.svg)](https://codecov.io/gh/open-node/errors)
 
 # Installation
-<pre>npm i @open-node/errors--save</pre>
+<pre>npm i @open-node/errors --save</pre>
 
 # Usage
 * your node.js process code

@@ -1,5 +1,3 @@
-const util = require("util");
-
 /**
  * @class
  * @param {object} defines Error info defined [ [code, message] ]
@@ -9,8 +7,9 @@ function Errors(defines) {
   const errors = {};
   for (const [code, msg] of defines) {
     errors[code] = (...args) => {
-      const error = new Error(util.format(msg, ...args));
+      const error = new Error(msg);
       error.code = code;
+      error.data = args;
 
       return error;
     };

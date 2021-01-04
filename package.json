@@ -1,6 +1,6 @@
 {
   "name": "@open-node/errors",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "custom error object",
   "main": "src/errors.js",
   "scripts": {
